@@ -118,7 +118,6 @@ address {
 }
 .contacts-head {
   display: flex;
-  
   margin-left: auto;
   margin-top: 0;
   margin-bottom: 0;
@@ -129,16 +128,18 @@ address {
 }
 .contacts-icon {
   display: flex;
-  align-self: center;
-  margin-left: auto;
+  align-items: center;
   margin-top: 0;
   margin-bottom: 0;
-  padding: 0;
-  
+  padding-left: 0;
 }
-/* .svg-icon {
-  
-} */
+.svg-icon {
+  fill: #757575;
+}
+/* .svg-icon:hover,
+.svg-icon:focus {
+  fill: #2196F3;;
+}  не работает!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .nav-stud,
 .nav-portf,
 .nav-cont {
@@ -337,6 +338,10 @@ address {
   color: var(--additional-text);
   padding-bottom: 30px;
 }
+/* clients */
+
+
+
 /* FOOTER */
 footer {
   background: var(--hero-footer-background);
