@@ -118,6 +118,7 @@ address {
 }
 .contacts-head {
   display: flex;
+  
   margin-left: auto;
   margin-top: 0;
   margin-bottom: 0;
@@ -126,6 +127,18 @@ address {
 .contacts-head li:not(:first-child) {
   margin-left: 50px;
 }
+.contacts-icon {
+  display: flex;
+  align-self: center;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  
+}
+/* .svg-icon {
+  
+} */
 .nav-stud,
 .nav-portf,
 .nav-cont {
@@ -154,11 +167,13 @@ address {
 
 .contacts-mailto {
   display: block;
+  align-self: center;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--additional-text);
   padding: 32px 0;
+  margin-left: 10px;
 }
 .contacts-mailto:hover,
 .contacts-mailto:focus {
@@ -166,11 +181,13 @@ address {
 }
 .contacts-tel {
   display: block;
+  align-self: center;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--additional-text);
   padding: 32px 0;
+  margin-left: 10px;
 }
 .contacts-tel:hover,
 .contacts-tel:focus {
@@ -182,13 +199,19 @@ address {
 /* MAIN */
 /* HERO */
 .hero {
-  background-image: url(../images/bghero.jpeg);
+  width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bghero.jpeg);
   background-repeat: no-repeat;
-  /* background: var(--hero-footer-background); */
-  /* background: rgba(47, 48, 58, 0.4); */
   text-align: center;
   padding: 200px 0;
 }
+
 .title-hero {
   font-weight: 900;
   font-size: 44px;
