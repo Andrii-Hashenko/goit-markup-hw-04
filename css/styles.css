@@ -182,7 +182,10 @@ address {
 /* MAIN */
 /* HERO */
 .hero {
-  background: var(--hero-footer-background);
+  background-image: url(../images/bghero.jpeg);
+  background-repeat: no-repeat;
+  /* background: var(--hero-footer-background); */
+  /* background: rgba(47, 48, 58, 0.4); */
   text-align: center;
   padding: 200px 0;
 }
