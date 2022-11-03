@@ -200,6 +200,9 @@ address {
 /* MAIN */
 /* HERO */
 .hero {
+  background: var(--hero-footer-background);
+  text-align: center;
+  padding: 200px 0;
   max-width: 1600px;
   min-height: 600px;
   margin-right: auto;
@@ -212,8 +215,7 @@ address {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  text-align: center;
-  padding: 200px 0;
+  
 }
 
 .title-hero {
