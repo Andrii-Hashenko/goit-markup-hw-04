@@ -201,6 +201,7 @@ address {
 /* HERO */
 .hero {
   max-width: 1600px;
+  min-height: 600px;
   margin-right: auto;
   margin-left: auto;
   background-image: linear-gradient(
@@ -209,7 +210,7 @@ address {
     ),
     url(../images/bghero.jpeg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   text-align: center;
   padding: 200px 0;
