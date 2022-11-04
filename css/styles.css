@@ -305,6 +305,14 @@ address {
 .team {
   background: var(--team-background);
 }
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 50px;
+}
 .team-conteiner {
   display: flex;
   margin: 0;
@@ -327,14 +335,7 @@ address {
 .team-box img {
   margin-bottom: 30px;
 }
-.team-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  color: var(--text-color);
-  margin-bottom: 50px;
-}
+
 .team-cap {
   font-weight: 500;
   font-size: 16px;
@@ -348,29 +349,42 @@ address {
   line-height: 1.36;
   text-align: center;
   color: var(--additional-text);
-  padding-bottom: 30px;
   margin-bottom: 16px;
-}
-.link-icon {
-  list-style: none;
-  justify-content: center;
-  padding: 0;
-  border: none;
-  width: 44px;
-  height: 44px;
-
-  border-radius: 50%;
-  background: #ffffff;
-}
-.link-icon:hover {
-  background: #2196f3;
 }
 .team-social {
   display: flex;
+  justify-content: center;
   margin: 0;
   padding: 0;
-  list-style: none;
+  padding-bottom: 30px;
+  /* padding-left: 32px;
+  padding-right: 32px; */
+  
+}
+.team-social .social-item {
+  width: 44px;
+  height: 44px;
+margin-left: 0;
+  margin-right: 10px;
+}
+
+.team-social .link-icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
   justify-content: center;
+  border-radius: 50%;
+  color:  #AFB1B8;;
+  background: #ffffff;
+}
+.link-icon:hover,
+.link-icon:focus {
+  background: #2196f3;
+  color: #FFFFFF;
+}
+.team-social .svg-icon {
+  fill: currentColor;
 }
 /* clients */
 .clients-title {
