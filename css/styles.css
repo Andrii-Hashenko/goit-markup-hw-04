@@ -28,6 +28,11 @@
   --btn-p-box-shadow-one: rgba(0, 0, 0, 0.1);
   --btn-p-box-shadow-two: rgba(0, 0, 0, 0.08);
   --container-project-border: #eeeeee;
+  --hero-gradient: rgba(47, 48, 58, 0.4);
+  --social-link-icon: #afb1b8;
+  --join-in-list: rgba(255, 255, 255, 0.1);
+  --portfolio-item-hover06: rgba(0, 0, 0, 0.06);
+  --portfolio-item-hover16: rgba(0, 0, 0, 0.16);
   --ul-class-gap: 30px;
   --filter-gap: 8px;
 }
@@ -126,20 +131,19 @@ address {
 .contacts-head li:not(:first-child) {
   margin-left: 50px;
 }
-.contacts-icon {
-  display: flex;
-  align-items: center;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-.svg-icon {
-  fill: #757575;
-}
 
-.svg-icon:hover,
-.svg-icon:focus {
-  fill: #2196f3;
+.contacts-head .svg-icon {
+  align-items: center;
+  fill: var(--additional-text);
+  margin-right: 10px;
+}
+.contacts-mailto:hover .svg-icon,
+.contacts-mailto:focus .svg-icon {
+  fill: var(--web-hover-fokus);
+}
+.contacts-tel:hover .svg-icon,
+.contacts-tel:focus .svg-icon {
+  fill: var(--web-hover-fokus);
 }
 .nav-stud,
 .nav-portf,
@@ -168,28 +172,28 @@ address {
 }
 
 .contacts-mailto {
-  display: block;
+  display: flex;
   align-self: center;
+  align-items: center;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--additional-text);
   padding: 32px 0;
-  margin-left: 10px;
 }
 .contacts-mailto:hover,
 .contacts-mailto:focus {
   color: var(--web-hover-fokus);
 }
 .contacts-tel {
-  display: block;
+  display: flex;
   align-self: center;
+  align-items: center;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--additional-text);
   padding: 32px 0;
-  margin-left: 10px;
 }
 .contacts-tel:hover,
 .contacts-tel:focus {
@@ -208,10 +212,7 @@ address {
   min-height: 600px;
   margin-right: auto;
   margin-left: auto;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
+  background-image: linear-gradient(var(--hero-gradient), var(--hero-gradient)),
     url(../images/bghero.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -255,7 +256,7 @@ address {
 }
 .offer-icon {
   justify-content: center;
-  background: #f5f4fa;
+  background: var(--team-background);
   border-radius: 4px;
   padding: 25px 100px;
   margin-bottom: 55px;
@@ -373,28 +374,24 @@ address {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  color: #afb1b8;
-  background: #ffffff;
+  color: var(--social-link-icon);
+  background: var(--hero-footer);
 }
 .link-icon:hover,
 .link-icon:focus {
-  background: #2196f3;
-  color: #ffffff;
+  background: var(--web-hover-fokus);
+  color: var(--hero-footer);
 }
 .team-social .svg-icon {
   fill: currentColor;
 }
 /* clients */
 .clients-title {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
-
-  color: #212121;
+  color: var(--text-color);
   margin-bottom: 50px;
 }
 .clients-list {
@@ -410,16 +407,31 @@ address {
   margin-left: var(--ul-class-gap);
   box-sizing: border-box;
   justify-content: center;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--social-link-icon);
   border-radius: 4px;
 }
-.clients-box {
+.clients-lnik {
   width: 100%;
   height: 100%;
   display: flex;
   padding: 16px 32px;
   justify-content: center;
   align-items: center;
+}
+.clients-lnik .svg-icon {
+  fill: var(--additional-text);
+}
+.clients-item:hover,
+.clients-item:focus {
+  fill: var(--web-hover-fokus);
+  border: 1px solid var(--web-hover-fokus);
+  border-radius: 4px;
+}
+.clients-lnik:hover .svg-icon,
+.clients-lnik:focus .svg-icon {
+  fill: var(--web-hover-fokus);
+  border: 1px solid var(--web-hover-fokus);
+  border-radius: 4px;
 }
 /* FOOTER */
 footer {
@@ -494,15 +506,11 @@ footer {
 }
 
 .joinin-title {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+  line-height: 1.14;
   text-transform: uppercase;
   padding-top: 70px;
-  color: #ffffff;
+  color: var(--hero-footer);
   margin-bottom: 20px;
 }
 .joinin-box .joinin-list {
@@ -527,13 +535,13 @@ footer {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  color: #ffffff;
-  background: rgba(255, 255, 255, 0.1);
+  color: var(--hero-footer);
+  background: var(--join-in-list);
 }
 .link-icon:hover,
 .link-icon:focus {
-  background: #2196f3;
-  color: #ffffff;
+  background: var(--web-hover-fokus);
+  color: var(--hero-footer);
 }
 .joinin-list .svg-icon {
   fill: currentColor;
@@ -576,10 +584,10 @@ footer {
 .portfolio-item a:hover,
 .portfolio-item a:focus {
   box-sizing: border-box;
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  background: var(--hero-footer);
+  border: 1px solid var(--container-project-border);
+  box-shadow: 0px 1px 1px var(--team-bth-p-box-shadow), 0px 4px 4px var(--portfolio-item-hover06),
+    1px 4px 6px var(--portfolio-item-hover16);
 }
 
 .portfolio {
@@ -619,5 +627,3 @@ footer {
   color: var(--additional-text);
   padding-bottom: 20px;
 }
-
-
