@@ -357,14 +357,12 @@ address {
   margin: 0;
   padding: 0;
   padding-bottom: 30px;
-  /* padding-left: 32px;
-  padding-right: 32px; */
-  
 }
 .team-social .social-item {
-  width: 44px;
-  height: 44px;
-margin-left: 0;
+  flex-basis: calc((100%-30px) / 4);
+  max-width: 44px;
+  min-height: 44px;
+  margin-left: 0;
   margin-right: 10px;
 }
 
@@ -375,13 +373,13 @@ margin-left: 0;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  color:  #AFB1B8;;
+  color: #afb1b8;
   background: #ffffff;
 }
 .link-icon:hover,
 .link-icon:focus {
   background: #2196f3;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .team-social .svg-icon {
   fill: currentColor;
@@ -416,8 +414,12 @@ margin-left: 0;
   border-radius: 4px;
 }
 .clients-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
   padding: 16px 32px;
   justify-content: center;
+  align-items: center;
 }
 /* FOOTER */
 footer {
