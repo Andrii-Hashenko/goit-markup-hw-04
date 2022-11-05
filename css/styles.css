@@ -425,9 +425,7 @@ address {
 .clients-link:hover .svg-icon,
 .clients-link:focus .svg-icon {
   fill: var(--web-hover-fokus);
-  border: 1px solid var(--web-hover-fokus);
-  border-radius: 4px;
-}
+ }
 .clients-link .svg-icon {
   fill: var(--additional-text);
 }
