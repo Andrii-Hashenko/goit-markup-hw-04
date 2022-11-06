@@ -401,6 +401,7 @@ address {
   list-style: none;
   justify-content: center;
   margin-left: calc(-1 * var(--ul-class-gap));
+  /* gap: 30px; */
 }
 .clients-item {
   flex-basis: calc(100% / 6 - var(--ul-class-gap));
